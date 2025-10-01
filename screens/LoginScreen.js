@@ -22,7 +22,7 @@ export default function LoginScreen({ navigation }) {
       const found = users.find(u => String(u.username).toLowerCase() === username.toLowerCase());
       if (!found) {
         setLoading(false);
-        Alert.alert('Erro', 'Usuário não encontrado. Verifique os usuários disponíveis.');
+        Alert.alert('Erro', 'Falha ao autenticar. Usuário ou senha inválidos.');
         return;
       }
 

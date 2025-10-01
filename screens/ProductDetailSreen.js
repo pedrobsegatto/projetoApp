@@ -44,8 +44,8 @@ export default function ProductDetailsScreen({ route }) {
       <Image source={{ uri: product.image }} style={styles.image} resizeMode="contain" />
       <Text style={styles.title}>{product.title}</Text>
       <Text style={styles.category}>{product.category}</Text>
-      <Text style={styles.price}>{formatPriceBRL(product.price)}</Text>
       <Text style={styles.desc}>{product.description}</Text>
+      <Text style={styles.price}>{formatPriceBRL(product.price)}</Text>
     </ScrollView>
   );
 }
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   container: { padding: 16, alignItems: 'center', backgroundColor: '#fff' },
   image: { width: 200, height: 200, marginBottom: 16 },
   title: { fontSize: 18, fontWeight: '700', textAlign: 'center' },
-  category: { marginTop: 8, fontStyle: 'italic', color: '#666' },
-  price: { marginTop: 12, fontSize: 16, fontWeight: '700' },
+  category: { marginTop: 8, fontStyle: 'italic', color: '#777' },
   desc: { marginTop: 16, textAlign: 'left' },
+  price: { marginTop: 12, fontSize: 16, fontWeight: '700' },
 });
