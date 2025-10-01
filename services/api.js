@@ -5,9 +5,9 @@ const api = axios.create({
   timeout: 10000,
 });
 
-// Exporta helper para formatação de moeda BRL
+
 export function formatPriceBRL(value) {
-  // garante número
+  
   const v = Number(value) || 0;
   return v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }

@@ -15,24 +15,23 @@ export default function LoginScreen({ navigation }) {
 
     try {
       setLoading(true);
-      // 1) Verifica se usuário existe em /users
+      
       const usersRes = await api.get('/users');
       const users = usersRes.data || [];
 
       const found = users.find(u => String(u.username).toLowerCase() === username.toLowerCase());
       if (!found) {
         setLoading(false);
-        Alert.alert('Erro', 'Usuário não encontrado. Verifique os usuários disponíveis.');
+        Alert.alert('Erro', 'Falha ao autenticar. Usuário ou senha inválidos.');
         return;
       }
 
-      // 2) Tenta autenticar no endpoint /auth/login
-      // FakeStore aceita body { username, password }
+      
       try {
         const authRes = await api.post('/auth/login', { username, password });
         const token = authRes.data?.token;
         if (token) {
-          // login ok -> navegar para Home
+          
           setLoading(false);
           navigation.reset({
             index: 0,
@@ -43,7 +42,7 @@ export default function LoginScreen({ navigation }) {
           Alert.alert('Erro', 'Credenciais inválidas.');
         }
       } catch (authErr) {
-        // se endpoint retornar erro, exibir mensagem amigável
+        
         setLoading(false);
         Alert.alert('Erro', 'Falha ao autenticar. Usuário ou senha inválidos.');
       }
@@ -87,7 +86,7 @@ export default function LoginScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: { padding: 16, flex: 1, backgroundColor: '#fff' },
+  container: { padding: 16, flex: 1, backgroundColor: '#fdfff3ff' },
   label: { fontWeight: '600', marginTop: 8 },
   input: { borderWidth: 1, borderColor: '#ccc', padding: 8, marginTop: 6, borderRadius: 6 },
   hintTitle: { fontWeight: '600', marginBottom: 4 },

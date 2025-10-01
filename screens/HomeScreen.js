@@ -11,7 +11,7 @@ export default function HomeScreen({ navigation, route }) {
   const [categoryFilter, setCategoryFilter] = useState('');
   const [error, setError] = useState(null);
 
-  // header: logout (left) and info (right)
+  
   useLayoutEffect(() => {
     navigation.setOptions({
       headerLeft: () => (
@@ -99,7 +99,7 @@ export default function HomeScreen({ navigation, route }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#fff' },
+  container: { flex: 1, backgroundColor: '#fdfff3ff' },
   filterRow: { padding: 10, flexDirection: 'row', alignItems: 'center' },
   filterButton: { paddingVertical: 6, paddingHorizontal: 10, borderRadius: 20, borderWidth: 1, borderColor: '#ccc', marginRight: 8 },
   filterButtonActive: { backgroundColor: '#333', borderColor: '#333' },
