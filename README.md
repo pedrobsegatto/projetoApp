@@ -20,7 +20,7 @@
 <br>
 
  ```
- npm install -g expo-cli (Instala o Expo)
+  npm install expo (Instala o Expo)
 
 cd "nome-do-projeto"
 
