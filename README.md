@@ -60,6 +60,8 @@ expo start (Inicia o Expo)
 
 ### *Aplicativo idealizado e projetado por:*
 
+<br>
+
 - Lauro Dariva Ferneda | RA: `1136899`
 
 - Pedro Bohnen Segatto | RA: `1136047`
