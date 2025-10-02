@@ -1,69 +1,95 @@
-## **Projeto APP**
+# 🛍️ Projeto APP
 
-<br>
-<br>
+Um aplicativo mobile desenvolvido com **React Native** e **Expo** para demonstração de funcionalidades de autenticação e consumo de API.
 
-### *Passos para rodar o projeto usando Expo:*
+---
 
-<br>
+## 🛠️ Tecnologias Utilizadas
 
-- Fazer o git clone do projeto no repositório https://github.com/pedrobsegatto/projetoApp/new/main
+- ⚛️ **React Native** - Framework mobile  
+- 🎯 **Expo** - Plataforma de desenvolvimento  
+- 🧭 **React Navigation** - Navegação entre telas  
+- 🌐 **Axios** - Cliente HTTP para APIs  
+- 📱 **React Native Screens** - Otimização de telas nativas  
 
-<br>
+---
 
-- Abrir o projeto no VSCODE
+## 📁 Estrutura do Projeto
 
-<br>
-
-- Rodar os seguintes código
-
-<br>
-
- ```
-  npm install expo (Instala o Expo)
-
-cd "nome-do-projeto"
-
-expo start (Inicia o Expo)
+```
+projetoApp/
+├── App.js                     # Componente principal com navegação
+├── screens/                   # Telas do aplicativo
+│   ├── LoginScreen.js         # Tela de login
+│   ├── HomeScreen.js          # Tela principal com produtos
+│   ├── ProductDetailScreen.js # Detalhes do produto
+│   └── GroupInfoScreen.js     # Informações do grupo
+├── services/
+│   └── api.js                 # Configuração da API
+├── components/
+│   └── ProductItem.js         # Componente de produto
+├── assets/                    # Imagens e ícones
+└── package.json               # Dependências do projeto
 ```
 
-<br>
-<br>
+---
 
-- Utilizando o aplicativo Expo Go escaneie o QR CODE gerado no terminal
+## 📦 Dependências do Projeto
 
-<br>
+```json
+{
+  "@react-navigation/native": "^7.1.17",
+  "@react-navigation/native-stack": "^7.3.26",
+  "axios": "^1.12.2",
+  "expo": "~54.0.10",
+  "expo-status-bar": "~3.0.8",
+  "react": "19.1.0",
+  "react-dom": "19.1.0",
+  "react-native": "0.81.4",
+  "react-native-safe-area-context": "~5.6.0",
+  "react-native-screens": "~4.16.0",
+  "react-native-web": "^0.21.0"
+}
+```
 
 ---
 
-### *Como verificar os usuários disponíveis para login:*
+## 🚀 Como rodar o projeto com Expo
 
-<br>
+1. **Clonar o repositório**
+   ```bash
+   git clone https://github.com/pedrobsegatto/projetoApp.git
+   ```
 
-- Para logar na aplicação faça uso dos usuários e senhas disponíveis na API https://fakestoreapi.com
+2. **Abrir o projeto** no **VS Code** (ou outro editor de sua preferência).
 
-    #### Exemplo: 
+3. **Instalar as dependências** e rodar o Expo:
+   ```bash
+   npm install expo   # Instala o Expo
+   cd nome-do-projeto
+   expo start         # Inicia o Expo
+   ```
 
-    *Usuário:* `johnd`
-
-    *Senha:* `m38rmF$`
-
-<br>
-
-- Para verificar outros usuários disponíveis, utilize desta URL: https://fakestoreapi.com/users
-
-
-<br>
-<br>
+4. **Executar no dispositivo físico**:
+   - Baixe o aplicativo **Expo Go** (disponível para Android/iOS).
+   - Escaneie o **QR Code** gerado no terminal ou no navegador.
 
 ---
 
-### *Aplicativo idealizado e projetado por:*
+## 🔑 Login na aplicação
 
-<br>
+Os usuários e senhas estão disponíveis na API pública: [Fake Store API](https://fakestoreapi.com).
 
-- Lauro Dariva Ferneda | RA: `1136899`
+### Exemplo de login
+- **Usuário:** `johnd`  
+- **Senha:** `m38rmF$`
 
-- Pedro Bohnen Segatto | RA: `1136047`
+👉 Para verificar outros usuários, acesse: [https://fakestoreapi.com/users](https://fakestoreapi.com/users)
 
-- Pedro de Oliveira Souza Leal | RA: `1136365`
+---
+
+## 👨‍💻 Autores
+
+- Lauro Dariva Ferneda — RA: `1136899`  
+- Pedro Bohnen Segatto — RA: `1136047`  
+- Pedro de Oliveira Souza Leal — RA: `1136365`
