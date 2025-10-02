@@ -40,7 +40,7 @@ expo start (Inicia o Expo)
 
 <br>
 
-- Para logar na aplicação faça uso dos usuários e senhas disponíveis na API https://fakestoreapi.com/
+- Para logar na aplicação faça uso dos usuários e senhas disponíveis na API https://fakestoreapi.com
 
     #### Exemplo: 
 
